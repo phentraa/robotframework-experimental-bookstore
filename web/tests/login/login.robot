@@ -14,6 +14,7 @@ Simple Login
     Enter Username    ${TEST_USER}[username]
     Enter Password    ${TEST_USER}[password]
     Submit Login Form
+    Get Url    ==    ${BASE_URL}/profile
 
 
 *** Keywords ***
