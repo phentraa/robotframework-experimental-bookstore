@@ -4,30 +4,19 @@
 *** Settings ***
 Library    Browser
 Resource    ${CURDIR}/../../../common/common.resource
+Resource    ${CURDIR}/../../resources/login.resource
 
 *** Variables ***
 
 
 *** Test Cases ***
 Simple Login
-    Open Browser To Login Page
+    Open Browser To Page    /login
     Enter Username    ${TEST_USER}[username]
     Enter Password    ${TEST_USER}[password]
     Submit Login Form
+    Wait For Navigation    ${BASE_URL}/profile    5s
     Get Url    ==    ${BASE_URL}/profile
 
 
 *** Keywords ***
-Open Browser To Login Page
-    New Browser    headless=${FALSE}
-    New Page    ${BASE_URL}/login
-    Get Title    ==    DEMOQA
-
-Enter Username
-    [Arguments]    ${username}
-    Fill Text    id=userName    ${username}
-Enter Password
-    [Arguments]    ${password}
-    Fill Text    id=password    ${password}
-Submit Login Form
-    Click    id=login
