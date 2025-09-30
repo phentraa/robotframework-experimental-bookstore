@@ -13,6 +13,7 @@ Author: Péter Kovács
 **Learning Resources:**
 - [Robot Framework User Guide](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html)
 - [Browser Library](https://marketsquare.github.io/robotframework-browser/Browser.html)
+- [Requests Library](https://marketsquare.github.io/robotframework-requests/doc/RequestsLibrary.html)
 
 ---
 
@@ -29,7 +30,7 @@ Author: Péter Kovács
   - [ ] Defining models
   - [ ] BOOKSTORE/BOOKS - CRUD
   - [ ] BOOKSTORE/BOOK - GET/DELETE
-  - [ ] ACCOUNT/AUTHORIZATION - POST
+  - [x] ACCOUNT/AUTHORIZATION - POST
   - [ ] ACCOUNT/USER - GET/POST/DELETE
 - [ ] Dockerizing project
   - [ ] Move everything into an src/ directory
