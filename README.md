@@ -21,7 +21,7 @@ Author: Péter Kovács
 - [x] Introducing environment variable handling  
 - [ ] Writing E2E tests
   - [x] ~~Registration~~ (_skipped yet because of captcha_)
-  - [] Login
+  - [x] Login
   - [x] Logout
   - [ ] Store
   - [ ] Profile
