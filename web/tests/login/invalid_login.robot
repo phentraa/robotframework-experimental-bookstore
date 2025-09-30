@@ -3,7 +3,7 @@
 
 *** Settings ***
 Library    Browser
-Resource    ${CURDIR}/../../../common/common.resource
+Resource    ${CURDIR}/../../resources/common.resource
 Resource    ${CURDIR}/../../resources/login.resource
 
 Test Setup    Open Browser To Page    /login

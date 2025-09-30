@@ -1,5 +1,5 @@
 *** Settings ***
-Variables    env_vars.py
+Variables    ${CURDIR}/../../env_vars.py
 
 *** Keywords ***
 Open Browser To Page
