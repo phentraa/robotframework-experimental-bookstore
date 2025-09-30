@@ -17,12 +17,12 @@ Author: Péter Kovács
 ---
 
 **TODO:**  
-- [✔] Creating initial project structure  
-- [✔] Introducing environment variable handling  
+- [x] Creating initial project structure  
+- [x] Introducing environment variable handling  
 - [ ] Writing E2E tests
   - [x] ~~Registration~~ (_skipped yet because of captcha_)
-  - [ ] Login ```(IN PROGRESS)```
-  - [ ] Logout
+  - [] Login
+  - [x] Logout
   - [ ] Store
   - [ ] Profile
 - [ ] Writing API tests

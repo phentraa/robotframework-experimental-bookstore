@@ -6,17 +6,20 @@ Library    Browser
 Resource    ${CURDIR}/../../../common/common.resource
 Resource    ${CURDIR}/../../resources/login.resource
 
+Test Setup    Run Keywords    Open Browser To Page    /login
+...           AND             Do Succesful Login    ${TEST_USER}[username]    ${TEST_USER}[password]
+
 *** Variables ***
 
 
 *** Test Cases ***
-Simple Login
-    Open Browser To Page    /login
-    Enter Username    ${TEST_USER}[username]
-    Enter Password    ${TEST_USER}[password]
-    Submit Login Form
-    Wait For Navigation    ${BASE_URL}/profile    5s
+Profile Page Should Be Visible After Succesful Login
+    [Teardown]    Do Succesful Logout
     Get Url    ==    ${BASE_URL}/profile
+
+Login Page Should Be Visible After Successful Logout
+    Do Succesful Logout
+    Get Url    ==    ${BASE_URL}/login
 
 
 *** Keywords ***
